@@ -9,6 +9,7 @@ form input, form select, form button {
     margin: 5px 0;
     width: 100%;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 ul {
