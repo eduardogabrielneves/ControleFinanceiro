@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +9,21 @@
 <body>
     <h1>Controle Financeiro</h1>
     <form id="recordForm">
-        <input type="text" id="Description" placeholder="Descrição" required>
-        <input type="number" id="Value" placeholder="Valor" required>
-        <select id="Type">
+        <input type="text" id="description" placeholder="Descrição" required />
+        <input type="number" id="value" placeholder="Valor" required />
+        <select id="type">
             <option value="income">Receita</option>
-            <option value="expense">Despesa</option>
+            <option value="expanse">Despesa</option>
         </select>
         <button type="submit">Adicionar</button>
     </form>
     <h2>Lançamentos</h2>
-    <ul id="recordsList"></ul>
-
+    <ul id="recordsList"></ul>  
     <h2>Totais</h2>
-    <p>Total Diário: <span id="dailySum"> R$ 0,00 </span></p>
-    <p>Total Geral: <span id="totalSum"> R$ 0,00 </span></p>
+    <P>Total Diário: <span id="dailySum"> R$ 0,00 </span></P>
+    <P>Total Geral: <span id="totalSum"> R$ 0,00 </span></P>
 
-    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.2/dist/pouchdb.min.js"></script>
+    <script src="https:/cdn.jsdelivr.net/npm/pouchdb@7.2.2/dist/pouchdb.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
